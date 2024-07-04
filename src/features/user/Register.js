@@ -42,7 +42,7 @@ function Register(){
             <div className="card mx-auto w-full max-w-5xl  shadow-xl">
                 <div className="grid  md:grid-cols-2 grid-cols-1  bg-base-100 rounded-xl">
                 <div className=''>
-                        <LandingIntro />
+                <img src='https://picsum.photos/600/900' alt='register' />
                 </div>
                 <div className='py-24 px-10'>
                     <h2 className='text-2xl font-semibold mb-2 text-center'>Register</h2>
@@ -52,7 +52,7 @@ function Register(){
 
                             <InputText defaultValue={registerObj.name} updateType="name" containerStyle="mt-4" labelTitle="Name" updateFormValue={updateFormValue}/>
 
-                            <InputText defaultValue={registerObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
+                            <InputText defaultValue={registerObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email" updateFormValue={updateFormValue}/>
 
                             <InputText defaultValue={registerObj.password} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue}/>
 

@@ -26,7 +26,7 @@ function Login(){
             // Call API to check user credentials and save token in localstorage
             localStorage.setItem("token", "DumyTokenHere")
             setLoading(false)
-            window.location.href = '/app/welcome'
+            window.location.href = '/app/dashboard'
         }
     }
 
@@ -40,7 +40,7 @@ function Login(){
             <div className="card mx-auto w-full max-w-5xl  shadow-xl">
                 <div className="grid  md:grid-cols-2 grid-cols-1  bg-base-100 rounded-xl">
                 <div className=''>
-                        <LandingIntro />
+                        <img src='https://picsum.photos/600/900' alt='login' />
                 </div>
                 <div className='py-24 px-10'>
                     <h2 className='text-2xl font-semibold mb-2 text-center'>Login</h2>
@@ -48,7 +48,7 @@ function Login(){
 
                         <div className="mb-4">
 
-                            <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
+                            <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email" updateFormValue={updateFormValue}/>
 
                             <InputText defaultValue={loginObj.password} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue}/>
 
